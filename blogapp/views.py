@@ -20,4 +20,4 @@ def create(request):
     blog.body = request.GET['body']
     blog.pub_date = timezone.datetime.now()
     blog.save()
-    return redirect('https://google.com')
+    return redirect('home.html')
